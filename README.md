@@ -1,3 +1,10 @@
+# Portfolio / Dev Diary
+
+Welcome to my slice of the internet, this will get updates <at least the diary> 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/35e2fb0f-ab2b-4040-af5d-5e33a894907e/deploy-status)](https://app.netlify.com/sites/kevinflores/deploys)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
