@@ -1,15 +1,50 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import './index.css';
-import App from './App';
+// import App from './App';
+import * as serviceWorker from './serviceWorker';
 import reportWebVitals from './reportWebVitals';
+
+import {
+  Nav,
+  Footer,
+  DevLogs,
+  Devlog,
+} from "./components";
+
+import {
+  Home,
+  About,
+  Projects,
+  Contact,
+  DevLog,
+  NotFound,
+} from "./Pages";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
-    <App />
+    // <App />
   // </React.StrictMode>
+  <Router>
+    <Nav />
+    <Routes>
+      <Route path="/" element={<Home />} /> 
+      <Route path="/About" element={<About />} />
+      <Route path="/Projects" element={<Projects />} />
+      <Route path="/Contact" element={<Contact />} />
+      <Route path="/DevLog" element={<DevLog />} />
+         <Route path="" element={<DevLogs />} />
+         <Route path=":postSlug" element={<Devlog />} />
+
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+    <Footer />
+  </Router>,
+  document.getElementById('root')
 );
+serviceWorker.unregister();
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

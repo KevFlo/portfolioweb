@@ -1,4 +1,5 @@
 .Navbar {
+    margin-top: 15px;
     background-color: #282c34;
     display: flex;
     /* color: white; */
@@ -8,13 +9,22 @@
 ul.Nav {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 35px;
     overflow: hidden;
     background-color: #282c34;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    
+    
+}
+
+li.Navli {
+    float: left;
+    background-color: #282c34;
+    padding: 1px;
+    padding-left: 40px;
     font-size: calc(10px + 2vmin);
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -54,14 +64,6 @@ ul.Nav {
     text-decoration-color: white;
     text-decoration-line: none;
     text-decoration-style: solid;
-}
-
-li.Navli {
-    float: left;
-    background-color: #282c34;
-    padding: 1px;
-    padding-left: 40px;
-    font-size: 25px;
 }
 
 li.Title a {
