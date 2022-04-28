@@ -7,7 +7,7 @@ export default function Contact() {
         <body>
             <div className="Contact">
                 <ul>
-                    <li>Email  -> floreskevin51398@gmail.com </li>
+                    <li>Email  -{">"} floreskevin51398@gmail.com </li>
                     {/* <li> LinkedIn </li> */}
                     
                 </ul>  

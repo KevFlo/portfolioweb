@@ -15,7 +15,7 @@ export default function Home() {
               I had a passion for technology since I was very young. But, when I was 14 I stumbled upon programming. I have kept learning more and more interesting stuff from then.
               As of now, I am currently working on devolping my skills with tryhackme as well as migrating into a Linux environment. I am very interested in Dev Ops Security and Netwrok Security
           </p>
-           The links will be placed in soon, just finishing up school responsabilities 
+           There will be better styles for the css after finals, aswell as a better logo and better integration with Github, Wakatime, and other APIs.
          </div> 
        </header> 
     </div> 
