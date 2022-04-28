@@ -1,6 +1,6 @@
 import React from 'react';
 import './Nav.css';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import {  Link } from 'react-router-dom';
 export default Nav;
 
 function Nav(){
