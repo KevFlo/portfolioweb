@@ -2,6 +2,7 @@
 
 Welcome to my slice of the internet, this will get updates <at least the diary> 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/35e2fb0f-ab2b-4040-af5d-5e33a894907e/deploy-status)](https://app.netlify.com/sites/kevinflores/deploys)
+  [![wakatime](https://wakatime.com/badge/user/c7e3d20a-4de4-483b-be5d-bd85f778b96b/project/6575a7bd-2fb6-42ab-9ce2-71c812921ad6.svg)](https://wakatime.com/badge/user/c7e3d20a-4de4-483b-be5d-bd85f778b96b/project/6575a7bd-2fb6-42ab-9ce2-71c812921ad6)
 
 
 
