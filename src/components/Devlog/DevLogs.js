@@ -5,7 +5,7 @@ function DevLogs() {
   return (
     <div className="home">
       <div class="container">
-        <Link to="/DevLog/this-is-a-post-title">
+        <Link to="/DevLog/test">
           <div class="row align-items-center my-5">
             <div class="col-lg-7">
               <img
@@ -15,7 +15,7 @@ function DevLogs() {
               />
             </div>
             <div class="col-lg-5">
-              <h1 class="font-weight-light">This is a post title</h1>
+              <h1 class="font-weight-light">Test text</h1>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy

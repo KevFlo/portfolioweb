@@ -9,8 +9,9 @@ import reportWebVitals from './reportWebVitals';
 import {
   Nav,
   Footer,
+  DevLog,
   DevLogs,
-  Devlog,
+  Post,
 } from "./components";
 
 import {
@@ -18,7 +19,6 @@ import {
   About,
   Projects,
   Contact,
-  DevLog,
   NotFound,
 } from "./Pages";
 
@@ -36,7 +36,7 @@ root.render(
       <Route path="/Contact" element={<Contact />} />
       <Route path="/DevLog" element={<DevLog />} />
          <Route path="" element={<DevLogs />} />
-         <Route path=":postSlug" element={<Devlog />} />
+         <Route path=":postSlug" element={<Post/>} />
 
       <Route path="*" element={<NotFound />} />
     </Routes>
