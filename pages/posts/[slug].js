@@ -23,7 +23,7 @@ const QUERY = gql`
       content {
         html
       }
-      coverPhoto {
+      thumbnail {
         id
         url
       }
@@ -41,7 +41,8 @@ const SLUGLIST = gql`
 export async function getStaticPaths() {
   const { posts } = await graphcms.request(SLUGLIST);
   return {
-    paths: posts.map((post) => ({ params: { slug: post.slug } }))
+    paths: posts.map((post) => ({ params: { slug: post.slug } })),
+    fallback: false,
   };
 }
 
@@ -62,12 +63,12 @@ export default function BlogPost({ post }) {
     <main className={styles.blog}>
       <img
         className={styles.cover}
-        src={post.coverPhoto.url}
+        src={"post.thumbnail.url"}
         alt={post.title}
       />
       <div className={styles.title}>
         <div className={styles.authdetails}>
-          <img src={post.author.avatar.url} alt={post.author.name} />
+          <img src={String(post.author.profilepic)} alt={post.author.name} />
           <div className={styles.authtext}>
             <h6>By {post.author.name} </h6>
             <h6 className={styles.date}>

@@ -3,19 +3,19 @@ import moment from "moment";
 import Link from "next/link";
 import Image from "next/image";
 
-function BlogPost({ title, author, coverPhoto, datePublished, slug }) {
+function BlogPost({ title, author, thumbnail, datePublished, slug }) {
   return (
     <div className={styles.card}>
       <Link href={`/posts/${slug}`}>
         <div className={styles.imgContainer}>
-          <Image layout="fill" src={coverPhoto.url} alt="" />
+          {/* <Image layout="fill" src={thumbnail.url} alt="" /> */}
         </div>
       </Link>
       <div className={styles.text}>
         <h2>{title}</h2>
         <div className={styles.details}>
           <div className={styles.author}>
-            <img src={author.profilepic.url} alt={author.name} />
+            {/* <img src={author.profilepic.url} alt={author.name} /> */}
             <h3>{author.name}</h3>
           </div>
           <div className={styles.date}>

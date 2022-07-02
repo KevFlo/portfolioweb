@@ -15,7 +15,7 @@ function Nav(){
                     <li className={styles.Navli}><Link href="/About">About</Link></li>
                     <li className={styles.Navli}><Link href="/Projects">Projects</Link></li>
                     <li className={styles.Navli}><Link href="/Contact">Contact</Link></li> 
-                    <li className={styles.Navli}><Link href="/DevLog">DevLog</Link></li>
+                    <li className={styles.Navli}><Link href="/Devlog">DevLog</Link></li>
                 </ul>
             </div>
         </nav>
