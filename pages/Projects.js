@@ -4,7 +4,6 @@ function Projects() {
   return (
     <div>
       <h1>Projects</h1>
-      <body>
         <div className="Projects">
             <ul>
                 <li><a href="https://github.com/KevFlo/P2PMessenger">P2P Chat App</a></li>
@@ -14,7 +13,6 @@ function Projects() {
                 <li>Kali Linux Training</li>
             </ul>
         </div>
-      </body>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-footer.bar {
+.footer.bar {
     background-color: #282c34;
     flex-direction: row;
     justify-content: space-between;
@@ -11,19 +11,19 @@ footer.bar {
     height: 60px;
 }
 
-footer {
+.footer {
     background-color: #282c34;
     padding: 20px;
 }
 
 
-footer .content .left {
+.footer.content.left {
     align-items: center;
     justify-content: center;
 }
 
 
-footer .p {
+.footer.p {
     color: #fff;
     text-decoration: none;
     margin-left: 10px;

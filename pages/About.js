@@ -1,13 +1,31 @@
 
 import React from 'react';
-import resume from '../../Flores_Kevin_Resume.pdf';
+// import resume from "../public/Flores_Kevin_Resume.pdf";
 // import style from '../About.css';
 
+
+// const myDocumentArrayBuffer = await instance.exportPDF(resume);
+// let base64EncodedDocument = '';
+// const len = myDocumentArrayBuffer.byteLength;
+// for (let i = 0; i < len; i++) {
+// 	base64EncodedDocument += String.fromCharCode(myDocumentArrayBuffer[i]);
+// }
+// window.localStorage.setItem('document', base64EncodedDocument);
+
+
+// const base64EncodedDocument = window.localStorage.getItem('document');
+// PSPDFKit.load({
+// 	// `base64Decode` is a user function that decodes a Base64 string into an `ArrayBuffer`.
+// 	document: `data:application/pdf;base64,${base64EncodedDocument}`
+// });
+
+// const element = document.getElementsByClassName('foo')[0]
+// PSPDFKit.load({ container: element});
 
 export default function About(){
 
     return(
-        <body>
+        
             <div className="About">
                 <h1>About Me</h1>
                 <div className="content"> 
@@ -27,13 +45,11 @@ export default function About(){
                 </div>
                 <h2>Resume</h2>
                 <div className="content-display">
-                <embed src={resume} width="800px" height="700px" />
+                    <div className='foo'> this is broken with migration to Next.js bear with it please</div>
+                {/* <embed src={resume} width="800px" height="700px" /> */}
                 </div>
 
             </div>
-        
-        </body>
-
 
     );
 }
