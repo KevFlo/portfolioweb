@@ -17,21 +17,6 @@ import {
   NotFound,
 } from ".";
 
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(
-//   <Router>
-//     <Nav />
-//     <Routes>
-//       <Link href="/" element={<Home />} /> 
-//       <Link href="/About" element={<About />} />
-//       <Link href="/Projects" element={<Projects />} />
-//       <Link href="/Contact" element={<Contact />} />
-//       <Link href="/DevLog" element={<DevLog />} />
-//     </Routes>
-//     <Footer />
-//   </Router>,
-//   // document.getElementById('root')
-// );
 export default function Home() {
   return (
      <div >
