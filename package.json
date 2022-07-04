@@ -20,8 +20,9 @@
   },
   "scripts": {
     "dev": "next dev",
-    "start": "next start",
     "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
     "test": "next test"
   },
   "eslintConfig": {
@@ -43,7 +44,6 @@
     ]
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "^12.2.0",
     "eslint": "^8.19.0"
   }
 }
