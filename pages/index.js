@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
-import logo from "../public/profile.webp";
 import reportWebVitals from "../reportWebVitals";
 
 import {
@@ -21,7 +20,7 @@ export default function Home() {
   return (
      <div >
       <header className="Home-header">
-        <img src={logo} className="Home-logo" alt="logo" />
+        {/* <img src={logo} className="Home-logo" alt="logo" /> */}
         <div className="App-welcome-section">
           <p>
               Hello, my name is Kevin. I am a student in Computer Science at the University of Houston. I am also an Intern at HPE.
