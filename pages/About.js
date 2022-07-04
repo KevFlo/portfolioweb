@@ -32,6 +32,15 @@ import profilepic from '../public/profile.webp';
 
 export default function About(){
 
+    if (typeof window !== 'undefined') {
+        console.log('You are on the browser')
+        // ✅ Can use window here
+      } else {
+        console.log('You are on the server')
+        // ⛔️ Don't use window here
+      }
+      
+
     const viewer = useRef(null);
 
     useEffect(() => {
@@ -50,7 +59,7 @@ export default function About(){
     }, []);
 
     return(
-
+        <body>
             <div className="About">
                 <div>
                 <h1>About Me</h1>
@@ -81,13 +90,16 @@ export default function About(){
                         <li><a href="https://tryhackme.com/p/Azath0th">TryHackMe</a></li>
                 </div>
                 <h2>Resume</h2>
+                
                 <div className='webviewer' ref={viewer} style={{height: "100vh"}}></div>
                 <div className="content-display">
                     <div className='foo'> this is broken with migration to Next.js bear with it please</div>
                 {/* <embed src={resume} width="800px" height="700px" /> */}
                 </div>
+                
 
             </div>
+        </body>
 
     );
 }
