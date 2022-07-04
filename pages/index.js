@@ -1,20 +1,5 @@
-import Head from "next/head";
-import Link from "next/link";
 import styles from "../styles/Home.module.css";
 import reportWebVitals from "../reportWebVitals";
-
-import {
-  Nav,
-  Footer,
-  DevLog,
-} from "../components";
-
-import {
-  About,
-  Projects,
-  Contact,
-  NotFound,
-} from ".";
 
 export default function Home() {
   return (
