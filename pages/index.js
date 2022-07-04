@@ -1,11 +1,23 @@
 import styles from "../styles/Home.module.css";
+import Image from 'next/image';
+import logo from '../public/welcome-banner.webp';
 import reportWebVitals from "../reportWebVitals";
 
 export default function Home() {
   return (
      <div >
       <header className="Home-header">
-        {/* <img src={logo} className="Home-logo" alt="logo" /> */}
+        <div >
+            <Image 
+            src={logo}
+            alt="/"
+            layout="intrinsic"
+            objectFit="cover"
+            priority
+            
+            />
+        </div>
+
         <div className="App-welcome-section">
           <p>
               Hello, my name is Kevin. I am a student in Computer Science at the University of Houston. I am also an Intern at HPE.
