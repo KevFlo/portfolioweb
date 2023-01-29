@@ -1,38 +1,27 @@
-import React from "react";
-import { useSession, getSession, signOut } from 'next-auth/react'
+import {  useSession } from 'next-auth/react';
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 
-const account = () => {
+export default function Dashboard(){ 
+  const { status  } = useSession();
+  const router = useRouter(); 
+   
+ 
+      useEffect(()=>{      
+        if( status === "unauthenticated")  
+        router.push('/') 
 
-    const { data: session, status } = useSession({required: true});
+      }, [status ]); 
+ 
+ 
+ if( status === "authenticated") {
+    return(
+    <div>
 
-    if (status === 'authenticated') {
-        return (
-            // build your dashboard here 
-            <div>
-                <p>Welcome {session.user.name}</p>
-            </div>
-        );
-    } else {
-        return (
-            <div>
-                <p>You found a secret room...akward</p>
-            </div>
-            );
-    }
-};
-
-export const getServerSideProps = async (context) => {
-    const session = await getSession(context)
-        if (!session) {
-            return {
-                redirect: {
-                    destination: '/'
-                }
-            }
-        }
-
-    return {
-        props: {session},
-    };
+        
+        <div><br />This is the dasboard</div> 
+    
+    </div> 
+    )
+  }
 }
-export default account;
