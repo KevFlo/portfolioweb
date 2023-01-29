@@ -3,6 +3,7 @@ import logo from '../public/welcome-banner.webp';
 import reportWebVitals from "../reportWebVitals";
 
 export default function Home() {
+
   return (
      <div >
       <header className="Home-header">
@@ -22,6 +23,8 @@ export default function Home() {
            There will be better styles for the css after finals, aswell as a better logo and better integration with Github, Wakatime, and other APIs.
          </div> 
        </header> 
+       <div  >
+       </div>
     </div> 
     );
 }
