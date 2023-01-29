@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import React from 'react';
-import { useEffect, useRef } from 'react';
 import profilepic from '../public/profile.webp';
 import resume from '../public/resume.webp';
 
