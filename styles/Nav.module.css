@@ -1,31 +1,50 @@
 .Navbar {
-    margin-top: 15px;
-    background-color: #282c34;
+    background-color: #141414;
+    width: 100%;
     display: flex;
-    /* color: white; */
   
 }
 
+div.Spacer {
+    height: 10rem;
+    display: block;
+
+}
+
+
 ul.Nav {
     list-style-type: none;
-    margin: 0;
-    padding: 35px;
-    overflow: hidden;
-    background-color: #282c34;
+    float: left;
     display: flex;
     flex-direction: row;
+    overflow: hidden;
     justify-content: space-around;
     align-items: center;
-    
-    
+
+  /* text-align: center; */
+    padding: 40px;
+    margin: 0;
+
+}
+
+li.NavliT {
+    padding: 1px;
+    padding-left: 60px;
+    background-color: #000000;
+    display: block;
+    text-align: justify;
+    text-decoration:#000000;
+    text-size-adjust:calc(100px);
+    font-size: calc(10px + 2vmin);
+
 }
 
 li.Navli {
     float: left;
-    background-color: #282c34;
+    background-color: #000000;
     padding: 1px;
-    padding-left: 40px;
-    font-size: calc(10px + 2vmin);
+    padding-left: 60px;
+    font-size: calc(10px + 1vmin);
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-style: normal;
@@ -33,7 +52,7 @@ li.Navli {
     line-height: normal;
     letter-spacing: normal;
     color: white;
-    text-transform: uppercase;
+    text-transform:capitalize;
     text-decoration: none;
     text-align: center;
     text-decoration-color: white;

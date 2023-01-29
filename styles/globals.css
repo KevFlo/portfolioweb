@@ -4,24 +4,31 @@
   font-family: "Brand";
   src: url("../public/Brand.woff");
 }
+/* NAV text */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: rgb(50, 50, 50);
+  color: rgb(66, 66, 66);
 }
 
 body {
-  margin: 0% 25%;
+  margin: 0% 1.8%;
   font-family: "Roboto", sans-serif;
+  overflow: scroll;
+  padding-bottom: 50px;
 }
 
 nav {
-  display: flex;
-  align-items: center;
+  position:absolute;
+  left:0;
+  right:0;
+  align-content: center;
   justify-content: center;
-  padding: 5rem;
+  padding-bottom: 0.5rem;
   font-family: "Brand";
+  background-color: black;
+
 }
 
 h1 {
@@ -43,23 +50,63 @@ h6 {
   font-size: 1rem;
 }
 
-p,
+p.home {
+  line-height: 1.5rem;
+  font-family: "Roboto Slab", serif;
+  padding: 1rem 0rem;
+  font-size: 1.5rem;
+}
+
+
+
 li {
   line-height: 1.5rem;
   font-family: "Roboto Slab", serif;
   padding: 1rem 0rem;
   font-size: 1.1rem;
+  list-style: none;
+  width: 100%;
 }
 
 ol,
 ul {
   padding-left: 1.5rem;
+  display: flex;
+}
+
+ul li {
+  width: 100%;
 }
 a {
   font-size: 1.5rem;
   text-decoration: none;
   font-weight: bold;
 }
+
+footer {
+  background-color: #000000;
+  border-top: '1px solid #ddd';
+  padding: 10px;
+  line-height: '60px';
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: '60px';
+  right:0;
+  left: 0;
+}
+
+
+.footer.content.left {
+  align-items: center;
+  justify-content: center;
+}
+.footer.p {
+  color: rgb(139, 31, 31);
+  text-decoration: none;
+  margin-left: 10px;
+}
+
 
 @media screen and (max-width: 768px) {
   body {
@@ -68,4 +115,25 @@ a {
   nav {
     padding: 3rem 0rem;
   }
+}
+
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 18px; /* Place the button at the bottom of the page */
+  right: 10px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(0, 0, 0); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 20px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
 }

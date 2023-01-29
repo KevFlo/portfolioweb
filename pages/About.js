@@ -1,62 +1,13 @@
-import WebViewer from '@pdftron/webviewer';
 import Image from 'next/image';
 import React from 'react';
 import { useEffect, useRef } from 'react';
 import profilepic from '../public/profile.webp';
-// import resume from "../public/Flores_Kevin_Resume.pdf";
-// import style from '../About.css';
-
-
-// const myDocumentArrayBuffer = await instance.exportPDF(resume);
-// let base64EncodedDocument = '';
-// const len = myDocumentArrayBuffer.byteLength;
-// for (let i = 0; i < len; i++) {
-// 	base64EncodedDocument += String.fromCharCode(myDocumentArrayBuffer[i]);
-// }
-// window.localStorage.setItem('document', base64EncodedDocument);
-
-
-// const base64EncodedDocument = window.localStorage.getItem('document');
-// PSPDFKit.load({
-// 	// `base64Decode` is a user function that decodes a Base64 string into an `ArrayBuffer`.
-// 	document: `data:application/pdf;base64,${base64EncodedDocument}`
-// });
-
-// const element = document.getElementsByClassName('foo')[0]
-// PSPDFKit.load({ container: element});
-
-
-
+import resume from '../public/resume.webp';
 
 
 
 export default function About(){
 
-    if (typeof window !== 'undefined') {
-        console.log('You are on the browser')
-        // ✅ Can use window here
-      } else {
-        console.log('You are on the server')
-        // ⛔️ Don't use window here
-      }
-      
-
-    const viewer = useRef(null);
-
-    useEffect(() => {
-        import('@pdftron/webviewer').then(() => {
-            WebViewer(
-                {
-                    path: '/lib',
-                    initialDoc: '../Flores_Kevin_Resume.pdf',
-                },
-                viewer.current,
-            ).then((instance) => {
-                const { docViewer } = instance;
-                //call WebViewer API here...
-            });
-        })
-    }, []);
 
     return(
         <body>
@@ -75,28 +26,43 @@ export default function About(){
                 </div>
                 
                 <div className="content"> 
-                    <p> My name is Kevin Flores, I was born and raised in Houston Texas. I like fishing, hiking, camping, and heavylifting.
-                        I started my undergrad education at the University of Iowa. But due to some unfortunate circumstances, mainly Harvey, I transferred back to Houston.
-                        I am currently a Senior in my last semester of college, Majoring in Computer Science. I am interested in web development, Cyber Security, Dev Ops, and Network Administration
-                        I am also very invested in distributed/cluster computing.
+                      <p>     My name is Kevin Flores, I was born and raised in Houston Texas. I like fishing, hiking, camping, and heavylifting.
+                        I started my undergrad education at the University of Iowa. But due to some unfortunate circumstances, mainly Hurricane Harvey, I transferred back to Houston.
+                        I am currently a Senior in my last semester of college, Majoring in Computer Science with a Minor in Mathematics. 
+                        I am interested in: Web Development, Cyber Security, Dev Ops, and Network Administration
+                        I am also very invested in Distributed/Cluster Computing.
                     </p>
+                    <p>
+                        I had a passion for technology since I was very young. But, when I was 14 I stumbled upon programming. I have kept learning more and more interesting stuff from then.
+                        As of now, I am currently working on devolping my skills with tryhackme as well as migrating into a Linux environment. I am also working on creating my own private Cloud Server with vpn actions.
+                        Once that is done I can use that to help develope this website further, as well as create a Homelab for some fun.
+          
+                    </p>
+                    
                     <p> 
-                        Follow my social media accounts to see what I am up to. Follow my Dev Logs to check up on my projects!
+                        Follow my social media accounts to see what I am up to.!
                     </p>
-                        <li><a href="https://instagram.com/kevoobot">instagram</a></li>
-                        <li><a href="https://github.com/KevFlo">Github</a></li>
-                        <li><a href="https://www.linkedin.com/in/flores-kevin/">LinkedIn</a></li>
-                        {/* <li>twitter</li> */}
-                        <li><a href="https://tryhackme.com/p/Azath0th">TryHackMe</a></li>
+                        <ul>
+                            <li><a href="https://instagram.com/kevoobot">instagram</a></li>
+                            <li><a href="https://github.com/KevFlo">Github</a></li>
+                            <li><a href="https://www.linkedin.com/in/flores-kevin/">LinkedIn</a></li>
+                            {/* <ul>twitter</ul> */}
+                            <li><a href="https://tryhackme.com/p/Azath0th">TryHackMe</a></li>
+                        </ul>
                 </div>
-                <h2>Resume</h2>
+                <h1>Resume</h1>
+                   <a href="https://drive.google.com/file/d/1h8zZcg6adBvGitE_0IkhyEc4PRRPbvzZ/view?usp=share_link">
+                    <Image src={resume}
+                        alt="Resume"
+                        layout='intrinsic'
+                        height={1000}
+                        width={800}
+                        
+                    />
+                    </a>
+
                 
-                <div className='webviewer' ref={viewer} style={{height: "100vh"}}></div>
-                <div className="content-display">
-                    <div className='foo'> this is broken with migration to Next.js bear with it please</div>
-                {/* <embed src={resume} width="800px" height="700px" /> */}
-                </div>
-                
+               
 
             </div>
         </body>

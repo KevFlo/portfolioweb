@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from "../../styles/Nav.module.css";
 import Link from 'next/link';
+import Spacer from "../Spacer/Spacer";
 export default Nav;
 
 function Nav(){
@@ -9,9 +10,9 @@ function Nav(){
     return(
         <>
         <nav>
-            <div>
+            <div >
                 <ul className={styles.Nav}>
-                    <li className={styles.Navli}><Link href="/">Kevin Flores</Link></li>
+                    <li className={styles.NavliT}><Link href="/">Kevin Flores</Link></li>
                     <li className={styles.Navli}><Link href="/About">About</Link></li>
                     <li className={styles.Navli}><Link href="/Projects">Projects</Link></li>
                     <li className={styles.Navli}><Link href="/Contact">Contact</Link></li> 
@@ -19,6 +20,7 @@ function Nav(){
                 </ul>
             </div>
         </nav>
+        <Spacer />
         </>
     );
 };
