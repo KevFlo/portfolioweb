@@ -17,19 +17,18 @@ const toggleVisible = () => {
 
 const scrollToTop = () =>{
 	window.scrollTo({
-	top: 0,
-	behavior: 'smooth'
-	/* you can also use 'auto' behaviour
-		in place of 'smooth' */
+		top: 0,
+		behavior: 'smooth'
+		/* you can also use 'auto' behaviour
+			in place of 'smooth' */
 	});
 };
 
-window.addEventListener('scroll', toggleVisible);
+// window.addEventListener('scroll', toggleVisible);
 
 return (
-
     <button onClick={scrollToTop} id="myBtn" title="Go to top"  style={{display: visible ? 'inline' : 'none'}} > Scroll To Top</button> 
-);
+	);
 }
 
 export default ToTop;
