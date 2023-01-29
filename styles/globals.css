@@ -9,7 +9,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: rgb(66, 66, 66);
+  color: rgb(61, 61, 61);
 }
 
 body {
@@ -17,6 +17,13 @@ body {
   font-family: "Roboto", sans-serif;
   overflow: scroll;
   padding-bottom: 50px;
+}
+
+button { 
+  color: black !important;
+  background-color: black;
+  outline-color: #000000;
+  border-style: none;
 }
 
 nav {
@@ -147,3 +154,4 @@ footer {
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
+
