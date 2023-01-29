@@ -1,34 +1,34 @@
-import React, {useState} from 'react';
+// import React, {useState} from 'react';
 
 
-const ToTop = () =>{
+// const ToTop = () =>{
 
-const [visible, setVisible] = useState(false)
+// const [visible, setVisible] = useState(false)
 
-const toggleVisible = () => {
-	const scrolled = document.documentElement.scrollTop;
-	if (scrolled > 300){
-	setVisible(true)
-	}
-	else if (scrolled <= 300){
-	setVisible(false)
-	}
-};
+// const toggleVisible = () => {
+// 	const scrolled = document.documentElement.scrollTop;
+// 	if (scrolled > 300){
+// 	setVisible(true)
+// 	}
+// 	else if (scrolled <= 300){
+// 	setVisible(false)
+// 	}
+// };
 
-const scrollToTop = () =>{
-	window.scrollTo({
-		top: 0,
-		behavior: 'smooth'
-		/* you can also use 'auto' behaviour
-			in place of 'smooth' */
-	});
-};
+// const scrollToTop = () =>{
+// 	window.scrollTo({
+// 		top: 0,
+// 		behavior: 'smooth'
+// 		/* you can also use 'auto' behaviour
+// 			in place of 'smooth' */
+// 	});
+// };
 
-// window.addEventListener('scroll', toggleVisible);
+// // window.addEventListener('scroll', toggleVisible);
 
-return (
-    <button onClick={scrollToTop} id="myBtn" title="Go to top"  style={{display: visible ? 'inline' : 'none'}} > Scroll To Top</button> 
-	);
-}
+// return (
+//     <button onClick={scrollToTop} id="myBtn" title="Go to top"  style={{display: visible ? 'inline' : 'none'}} > Scroll To Top</button> 
+// 	);
+// }
 
-export default ToTop;
+// export default ToTop;
