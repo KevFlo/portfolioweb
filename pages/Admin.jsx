@@ -7,18 +7,14 @@ export default function Dashboard(){
   const router = useRouter(); 
    
  
-      useEffect(()=>{      
+    useEffect(()=>{      
         if( status === "unauthenticated")  
         router.push('/') 
-
-      }, [status ]); 
- 
- 
+      }, [ status ]); 
  if( status === "authenticated") {
     return(
     <div>
 
-        
         <div><br />This is the dasboard</div> 
     
     </div> 
