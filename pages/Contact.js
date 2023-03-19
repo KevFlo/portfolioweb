@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import Popup from 'reactjs-popup';
 
 
 export default function Contact() {
+
       // States for contact form fields
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
@@ -10,9 +12,6 @@ export default function Contact() {
 
   //   Form validation state
   const [errors, setErrors] = useState({});
-
-  //   Setting button text on form submission
-  const [buttonText, setButtonText] = useState("Send");
 
   // Setting success or failure messages states
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
@@ -53,7 +52,6 @@ export default function Contact() {
     let isValidForm = handleValidation();
 
     if (isValidForm) {
-      setButtonText("Sending");
        const res = await fetch("/api/sendgrid", {
         body: JSON.stringify({
           email: email,
@@ -72,12 +70,10 @@ export default function Contact() {
         console.log(error);
         setShowSuccessMessage(false);
         setShowFailureMessage(true);
-        setButtonText("Send");
         return;
       }
       setShowSuccessMessage(true);
       setShowFailureMessage(false);
-      setButtonText("Send");
     }
     console.log(fullname, email, subject, message);
   };
@@ -87,7 +83,8 @@ export default function Contact() {
         <div>
           <div id="container">
             <h1>&bull; Keep in Touch &bull;</h1>
-            <div className="underline">
+            <div><br/></div>
+            <div className="underline" >
             </div>
             <div className="icon_wrapper">
               <svg className="icon" viewBox="0 0 145.192 145.192">
@@ -122,7 +119,10 @@ export default function Contact() {
                 <textarea name="message" placeholder="I'd like to chat about" value={message} onChange={(e) => {setMessage(e.target.value);}} id="message_input" cols="30" rows="5" required></textarea>
               </div>
               <div className="submit">
-                <input type="submit" value="Send Message" id="form_button" />
+                <Popup type="submit" value="Send Message" id="form_button" trigger={<input type="submit" value="Send Message" id="form_button" />} 
+                  position="right center">
+                  <div>Email Sent!</div>
+                </Popup>
               </div>
             </form>
           </div>
