@@ -75,7 +75,6 @@ export default function Contact() {
       setShowSuccessMessage(true);
       setShowFailureMessage(false);
     }
-    console.log(fullname, email, subject, message);
   };
 
 
