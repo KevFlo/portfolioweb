@@ -45,7 +45,6 @@ export default function About(){
                             <li><a href="https://instagram.com/kevoobot">instagram</a></li>
                             <li><a href="https://github.com/KevFlo">Github</a></li>
                             <li><a href="https://www.linkedin.com/in/flores-kevin/">LinkedIn</a></li>
-                            {/* <ul>twitter</ul> */}
                             <li><a href="https://tryhackme.com/p/Azath0th">TryHackMe</a></li>
                         </ul>
                 </div>
@@ -59,10 +58,6 @@ export default function About(){
                         
                     />
                     </a>
-
-                
-               
-
             </div>
         </body>
 
