@@ -19,7 +19,7 @@
     "markdown-to-jsx": "^7.2.0",
     "moment": "^2.29.4",
     "netlify": "^13.1.2",
-    "next": "13.1.6",
+    "next": "13.2.3",
     "next-auth": "^4.20.1",
     "node-fetch": "3.2.10",
     "npm-upgrade": "^3.1.0",
