@@ -17,7 +17,7 @@ function Nav(){
                     <li className="flex items-center justify-around  px-69 "><Link href="/Projects">Projects</Link></li>
                     <li className="flex items-center float-right justify-around"><Link href="/Contact">Contact</Link></li> 
                     <li className="flex items-center justify-around"><Link href="/DevLog">DevLog</Link></li>
-                    <li className="flex items-self-center ... w-1/8 h-16"><LoginBtn/></li>
+                    <li className="flex leading-normal text-center ... w-40 h-10"><LoginBtn/></li>
                 </ul>
                 
             </div>

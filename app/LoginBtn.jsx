@@ -9,8 +9,8 @@ export default function LoginBtn() {
   if (session) {
     return (
       <>
-      <div className="box-content h-32 w-3/4 p-0 border-4 ..."> 
-      <p className="whitespace-normal ...">
+      <div className="box-content h-32 w-3/4 p-0 border-0 ..."> 
+      <p className="whitespace-normal leading-normal text-center  ...">
       /\/\
   / /  \ 
  / / /\ \
@@ -19,9 +19,7 @@ export default function LoginBtn() {
    \/\/
 
       </p>
-
-   <br />
-        <button className=" px-3 py-2 border-0 text-[#141414] border-[#141414] hover:text-white hover:border-white  " onClick={() => signOut()}>Sign out</button>
+        <button className=" px-3 py-2 border-0 text-white border-[#141414] hover:text-white hover:border-white  " onClick={() => signOut()}>Sign out</button>
       </div>
       </>
     )
@@ -33,7 +31,7 @@ export default function LoginBtn() {
  / /\/ /\/ /\/ /\
 / /\ \/\ \/\ \/\ 
     <br />
-    <button className="px-2 py-1 border-0 text-[#141414] border-[#141414] hover:text-white hover:border-white " onClick={() => signIn()}>\/</button>
+    <button className="px-2 py-1 border-0 text-[#141414] border-[#141414] hover:text-white hover:border-white " onClick={() => signIn()}>\/\/</button>
     </>
   )
 }
