@@ -13,9 +13,11 @@ const getPostContent = (slug: string) => {
 
 export const generateStaticParams = async () => {
   const posts = getPostMetadata();
+  console.log(posts);
   return posts.map((post) => ({
     slug: post.slug,
   }));
+  
 };
 
 const PostPage = (props: any) => {
