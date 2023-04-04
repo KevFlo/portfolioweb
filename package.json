@@ -12,6 +12,7 @@
     "async": "^3.2.4",
     "autoprefixer": "^10.4.14",
     "dotenv": "^16.0.3",
+    "eslint-config-react-app": "^7.0.1",
     "graphql": "^16.6.0",
     "graphql-request": "^5.1.0",
     "gray-matter": "^4.0.3",
@@ -35,6 +36,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "lint": "next lint",
     "start": "next start",
     "test": "next test"
   },
@@ -57,7 +59,8 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^8.36.0",
+    "@next/eslint-plugin-next": "^13.2.4",
+    "eslint": "^8.37.0",
     "typescript": "5.0.2"
   }
 }
