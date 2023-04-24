@@ -15,16 +15,16 @@ function Projects() {
         </div>
         <br></br>
         <div >
-          <ul className="list-none">
-            <figure><embed src="https://wakatime.com/share/@KevFlo/7d4a9397-f498-47f4-8d94-a3ad80322934.svg"></embed></figure>
-            <figure><embed src="https://wakatime.com/share/@KevFlo/22527ea2-46e3-4be9-b135-503d6db55bd1.svg"></embed></figure>
-            <figure><embed src="https://wakatime.com/share/@KevFlo/98089332-e4ba-493a-a6e8-57261541cb2c.svg"></embed></figure>
-            <figure><embed src="https://wakatime.com/share/@KevFlo/65ecabe6-3a7e-4222-8acc-d45c6fb59fcd.svg"></embed></figure>
+          <ul className="list-none columns-2">
+            <figure><embed  className="w-full aspect-video ..." src="https://wakatime.com/share/@KevFlo/7d4a9397-f498-47f4-8d94-a3ad80322934.svg"></embed></figure>
+            <figure><embed  className="w-full aspect-video ..." src="https://wakatime.com/share/@KevFlo/22527ea2-46e3-4be9-b135-503d6db55bd1.svg"></embed></figure>
+            <figure><embed  className="w-full aspect-video ..." src="https://wakatime.com/share/@KevFlo/98089332-e4ba-493a-a6e8-57261541cb2c.svg"></embed></figure>
+            <figure><embed  className="w-full aspect-video ..." src="https://wakatime.com/share/@KevFlo/65ecabe6-3a7e-4222-8acc-d45c6fb59fcd.svg"></embed></figure>
           </ul>
         </div>
         <div className='h-24' >
                         <br/>
-                        <br/>
+                        <br/>2491
                     </div>
     </div>
   );
