@@ -24,8 +24,9 @@ export default function Home() {
               There will be better styles for the css after finals, aswell as a better logo and better integration with Github, Wakatime, and other APIs.
             </div> 
          </header> 
-          <div  >
-                
+          <div className='h-24' >
+                <br/>
+                <br/>
           </div>
        </div> 
        );

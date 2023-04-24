@@ -10,7 +10,7 @@ export default function About(){
        
             <div>
                 <div>
-                <h1>About Me</h1>
+                <h1 className='text-3xl font-bold mb-6'>About Me</h1>
                     <div>
                         <Image src={profilepic}
                             alt="/"
@@ -36,17 +36,10 @@ export default function About(){
           
                     </p>
                     
-                    <p> 
-                        Follow my social media accounts to see what I am up to.!
-                    </p>
-                        <ul>
-                            <li><a href="https://instagram.com/kevoobot">instagram</a></li>
-                            <li><a href="https://github.com/KevFlo">Github</a></li>
-                            <li><a href="https://www.linkedin.com/in/flores-kevin/">LinkedIn</a></li>
-                            <li><a href="https://tryhackme.com/p/Azath0th">TryHackMe</a></li>
-                        </ul>
+                    
                 </div>
-                <h1>Resume</h1>
+                <br></br>
+                <h1 className='text-3xl font-bold mb-6'>Resume</h1>
                    <a href="https://drive.google.com/file/d/1h8zZcg6adBvGitE_0IkhyEc4PRRPbvzZ/view?usp=share_link">
                     <Image src={resume}
                         alt="Resume"
@@ -56,6 +49,10 @@ export default function About(){
                         
                     />
                     </a>
+                    <div className='h-24' >
+                        <br/>
+                        <br/>
+                    </div>
             </div>
         
 
