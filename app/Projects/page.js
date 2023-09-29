@@ -10,7 +10,7 @@ function Projects() {
                 <li>Kubernetes 6 pi cluster computer/server</li>
                 <li><a href="https://tryhackme.com/p/Azath0th">TryHackMe</a></li>
                 <li>Pen Testing Course</li>
-                <li>This website, its about time i use my small corner of the internet.</li>
+                <li>I want to get the turing pi 2 to test.</li>
             </ul>
         </div>
         <br></br>
