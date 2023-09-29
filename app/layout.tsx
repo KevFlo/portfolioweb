@@ -11,7 +11,6 @@ export default function RootLayout({
   return (
       
       <html>
-        <head />
         <body>
           <Providers >
             <Nav />
@@ -20,6 +19,5 @@ export default function RootLayout({
           <Footer />
         </body>
       </html>
-    
   )
 }
