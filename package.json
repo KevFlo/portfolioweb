@@ -15,7 +15,7 @@
     "eslint-config-next": "^13.5.3",
     "eslint-config-react-app": "^7.0.1",
     "got": "11.8.5",
-    "graphql": "^16.6.0",
+    "graphql": "^16.8.1",
     "graphql-request": "^5.1.0",
     "gray-matter": "^4.0.3",
     "json5": "2.2.3",
