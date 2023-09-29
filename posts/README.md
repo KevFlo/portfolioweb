@@ -5,38 +5,11 @@ date: "1998-05-13"
 
 ---
 <h1> Hey there! I'm Kevin.</h1>
-    <img align="right" alt="GIF" src="professional_developer.gif" width="500" "/>
 
 ### I’m currently working on:
--    Attending University of Houston Majoring in Computer Science, ***Graduating Spring 2023***
 -    TryHackMe OSI Models and a cluster computation project using 6 raspberrypies
 -    Creating my own Private Cloud Server, and learning about VPN tunneling 
 -    Creating a P2P chat server and client with E2E ecription
-
-
-
-### Visit my webpage: [**kevinflores.net**](https://kevinflores.net/)
-
-### **Dev Music**  __*`!!!!`*__ 
-
-[![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=knightheart13&cover_image=true&theme=novatorem&bar_color=2eff62&bar_color_cover=false)](https://github.com/kittinan/spotify-github-profile)
-
-
-You can find me on:
-
-
- [![LinkedIn][3.2]][3] [![Instagram][2.2]][2]
-
-<!-- Icons -->
-
-[3.2]: https://i.imgur.com/IwuydvD.png (LinkedIn icon without padding)
-[2.2]: https://img.icons8.com/color/25/000000/instagram-new--v1.png
-
-
-<!-- Links to your social media accounts -->
-
-[3]: https://www.linkedin.com/in/flores-kevin/
-[2]: https://www.instagram.com/kevoobot/
 
 ---
 
