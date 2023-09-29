@@ -1,6 +1,5 @@
 'use client';
 import React, { useState } from "react";
-import Popup from 'reactjs-popup';
 
 
 export default function Contact() {
@@ -80,8 +79,144 @@ export default function Contact() {
 
 
     return (
-        <div>
-          <div id="container">
+        <div className="pt-6">
+          <section class="mb-32 text-gray-800">
+            <div class="flex flex-wrap">
+              <div class="grow-0 shrink-0 basis-auto mb-6 md:mb-0 w-full md:w-6/12 px-3 lg:px-6">
+                <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+                <p class="text-gray-500 mb-6">
+                  Want to chat? Send me an email and I will get back to you soon!
+                  Any questions regarding the projects I am working on are welcomed!
+                  Want to start a project together? Reach out!
+                </p>
+                {/* <p class="text-gray-500 mb-2">+ 01 234 567 89</p> */}
+                {/* <p class="text-gray-500 mb-2">info@gmail.com</p> */}
+              </div>
+              <div class="grow-0 shrink-0 basis-auto mb-12 md:mb-0 w-full md:w-6/12 px-3 lg:px-6">
+                <form onSubmit={handleSubmit}>
+                  <div class="form-group mb-6">
+                    <input type="text" name="name" value={fullname} onChange={(e) => {setFullname(e.target.value);}} id="name_input" class="form-control block
+                      w-full
+                      px-3
+                      py-1.5
+                      text-base
+                      font-normal
+                      text-gray-700
+                      bg-white bg-clip-padding
+                      border border-solid border-gray-300
+                      rounded
+                      transition
+                      ease-in-out
+                      m-0
+                      focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                      placeholder="Name"
+                      required
+                      />
+                  </div>
+                  <div class="form-group mb-6">
+                    <input type="email" name="email" value={email} onChange={(e) => {setEmail(e.target.value);}} id="email_input" class="form-control block
+                      w-full
+                      px-3
+                      py-1.5
+                      text-base
+                      font-normal
+                      text-gray-700
+                      bg-white bg-clip-padding
+                      border border-solid border-gray-300
+                      rounded
+                      transition
+                      ease-in-out
+                      m-0
+                      focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" 
+                      placeholder="Email address"
+                      required
+                      />
+                  </div>
+                  <div className="form-group mb-6">
+                    <select placeholder="Subject line" name="subject" value={subject} onChange={(e) => {setSubject(e.target.value);}} id="subject_input" class="form-control block
+                      w-full
+                      px-3
+                      py-1.5
+                      text-base
+                      font-normal
+                      text-gray-700
+                      bg-white bg-clip-padding
+                      border border-solid border-gray-300
+                      rounded
+                      transition
+                      ease-in-out
+                      m-0
+                      focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" required>
+                      <option className="text-gray-700" disabled hidden selected>Subject line</option>
+                      <option>I'd like to start a project</option>
+                      <option>I'd like to ask a question</option>
+                      <option>I'd like to make a proposal</option>
+                    </select>
+                  </div>
+                  <div class="form-group mb-6">
+                    <textarea class="
+                      form-control
+                      block
+                      w-full
+                      px-3
+                      py-1.5
+                      text-base
+                      font-normal
+                      text-gray-700
+                      bg-white bg-clip-padding
+                      border border-solid border-gray-300
+                      rounded
+                      transition
+                      ease-in-out
+                      m-0
+                      focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+                    " value={message} onChange={(e) => {setMessage(e.target.value);}} id="message_input" cols="30" rows="5" required placeholder="Message"></textarea>
+                  </div>
+                  <button type="submit" class="
+                    w-full
+                    px-6
+                    py-2.5
+                    bg-blue-600
+                    text-white
+                    font-medium
+                    text-xs
+                    leading-tight
+                    uppercase
+                    rounded
+                    shadow-md
+                    hover:bg-blue-700 hover:shadow-lg
+                    focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+                    active:bg-blue-800 active:shadow-lg
+                    transition
+                    duration-150
+                    ease-in-out" value="Send Message" id="form_button" trigger={<input type="submit" value="Send Message" id="form_button"/>} >Send</button>
+                </form>
+              </div>
+            </div>
+          </section>
+          
+          <div className="Socials">
+          <h2 class="text-3xl font-bold mb-6">Socials</h2>
+          <p> 
+                        Follow my social media accounts to see what I am up to.!
+                    </p>
+                        <ul>
+                            <li><a href="https://instagram.com/kevoobot">instagram</a></li>
+                            <li><a href="https://github.com/KevFlo">Github</a></li>
+                            <li><a href="https://www.linkedin.com/in/flores-kevin/">LinkedIn</a></li>
+                            <li><a href="https://tryhackme.com/p/Azath0th">TryHackMe</a></li>
+                        </ul>
+          </div>  
+
+          <div className='h-24' >
+              <br/>
+              <br/>
+          </div>
+        </div>
+    );
+}
+
+{/* <div id="container">
             <h1>&bull; Keep in Touch &bull;</h1>
             <div><br/></div>
             <div className="underline" >
@@ -95,43 +230,26 @@ export default function Contact() {
             <form onSubmit={handleSubmit} id="contact_form">
               <div className="name">
                 <label htmlFor="name"></label>
-                <input type="text" placeholder="My name is" name="name" value={fullname} onChange={(e) => {setFullname(e.target.value);}} id="name_input" required/> 
+                <input type="text" placeholder="My name is" /> 
               </div>
               <div className="email">
                 <label htmlFor="email"></label>
-                <input type="email" placeholder="My e-mail is" name="email" value={email} onChange={(e) => {setEmail(e.target.value);}} id="email_input" required/>
+                <input type="email" placeholder="My e-mail is" />
               </div>
               {/* <div className="telephone">
                 <label htmlFor="name"></label>
                 <input type="text" placeholder="My number is" name="telephone" id="telephone_input" required/>
               </div> */}
-              <div className="subject">
-                <label htmlFor="subject"></label>
-                <select placeholder="Subject line" name="subject" value={subject} onChange={(e) => {setSubject(e.target.value);}} id="subject_input" required>
-                  <option disabled hidden selected>Subject line</option>
-                  <option>I'd like to start a project</option>
-                  <option>I'd like to ask a question</option>
-                  <option>I'd like to make a proposal</option>
-                </select>
-              </div>
-              <div className="message">
-                <label htmlFor="message"></label>
-                <textarea name="message" placeholder="I'd like to chat about" value={message} onChange={(e) => {setMessage(e.target.value);}} id="message_input" cols="30" rows="5" required></textarea>
-              </div>
-              <div className="submit">
-                <Popup type="submit" value="Send Message" id="form_button" trigger={<input type="submit" value="Send Message" id="form_button" />} 
-                  position="right center">
-                  <div>Email Sent!</div>
-                </Popup>
-              </div>
-            </form>
-          </div>
-          <div className="Socials">
-                <ul>
-                    <li> LinkedIn -{">"} <a href="https://www.linkedin.com/in/flores-kevin/">flores-kevin</a> </li> 
-                    
-                </ul>
-          </div>  
-          </div>
-    );
-}
+          //     
+          //     <div className="message">
+          //       <label htmlFor="message"></label>
+          //       <textarea name="message" placeholder="I'd like to chat about" ></textarea>
+          //     </div>
+          //     <div className="submit">
+          //       <Popup type="submit" value="Send Message" id="form_button" trigger={<input type="submit" value="Send Message" id="form_button" />} 
+          //         position="right center">
+          //         <div>Email Sent!</div>
+          //       </Popup>
+          //     </div>
+          //   </form>
+          // </div> */}
