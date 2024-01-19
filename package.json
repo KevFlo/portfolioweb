@@ -12,7 +12,7 @@
     "async": "^3.2.4",
     "autoprefixer": "^10.4.14",
     "dotenv": "^16.0.3",
-    "eslint-config-next": "^13.5.3",
+    "eslint-config-next": "^14.1.0",
     "eslint-config-react-app": "^7.0.1",
     "got": "11.8.5",
     "graphql": "^16.8.1",
