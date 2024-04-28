@@ -1,4 +1,3 @@
-import Link from 'next/link';
 
 const GalleryG= ({ images }) => {
   return (
@@ -9,7 +8,7 @@ const GalleryG= ({ images }) => {
         </div>
       ))}
     </div>
-  );S
+  );
 };
 
 export default GalleryG;
