@@ -40,7 +40,7 @@ const DevLog = () => {
     ));
         
     return (
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+      <div className='grid grid-cols-1 justify-between md:grid-cols-2 gap-4'>
           <div className="max-w-4xl mx-auto px-4 py-8">
               <Image src={mk} alt="Devme" width={525} height={420} />
           </div>

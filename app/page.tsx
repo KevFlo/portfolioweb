@@ -12,9 +12,7 @@ const images = [
 
 
 export default function Home() {
-    
-    
-   
+
     return (
         <div className='bg-gradient-to-r from-black via-stone-900 to-black text-slate-50'>
             <header className="Home-header flex-grow">
