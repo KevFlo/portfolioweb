@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import profilepic from '../../public/profile.webp';
-import resume from '../../public/resume.webp';
+import Resume from '../../components/Resume/Resume';
 
 
 export default function About(){
@@ -23,11 +23,13 @@ export default function About(){
                 </div>
                 
                 <div> 
-                    <p>     My name is Kevin Flores, I was born and raised in Houston Texas. I like fishing, hiking, camping, and heavy lifting.
+                    <p>     My name is Kevin, I was born and raised in Houston Texas. I like fishing, hiking, camping, and heavy lifting.
                         I started my undergrad education at the University of Iowa. But due to some unfortunate circumstances, mainly Hurricane Harvey, I transferred back to Houston.
-                        I am currently a Senior in my last semester of college, Majoring in Computer Science with a Minor in Mathematics. 
+                        Majored in Computer Science with a Minor in Mathematics. 
                         I am interested in: Web Development, Cyber Security, Dev Ops, and Network Administration
-                        I am also very invested in Distributed/Cluster Computing.
+                        I am also very invested in Distributed/Cluster Computing. 
+
+                        My Hobbies include automating aquaponics garden, amature HAM radio, 3D printing embeded systems
                     </p>
                     <p>
                         I had a passion for technology since I was very young. But, when I was 14 I stumbled upon programming. I have kept learning more and more interesting stuff from then.
@@ -40,7 +42,7 @@ export default function About(){
                 </div>
                 <br></br>
                 <h1 className='text-3xl font-bold mb-6'>Resume</h1>
-                   <a href="https://drive.google.com/file/d/1h8zZcg6adBvGitE_0IkhyEc4PRRPbvzZ/view?usp=share_link">
+                   {/* <a href="https://drive.google.com/file/d/104hbBMd7MY7Nf84bVtWVh8n8ZlFBXfH-/view?usp=sharing">
                     <Image src={resume}
                         alt="Resume"
                         layout='intrinsic'
@@ -48,7 +50,8 @@ export default function About(){
                         width={800}
                         
                     />
-                    </a>
+                    </a> */}
+                    <Resume />
                     <div className='h-24' >
                         <br/>
                         <br/>
