@@ -13,9 +13,20 @@ const images = [
     { url: '/images/muun.jpg', alt: 'Moon Zoomed up' },
     { url: '/images/jupiter.jpg', alt: 'Jupiter and his Moons' },
     { url: '/images/saturn.jpg', alt: 'Saturn' },
-    { url: '/images/mendkiwi.jpg', alt: 'mybird' },
     { url: '/images/htown.jpg', alt: 'htown' },
     { url: '/images/fungi.jpg', alt: 'fungi' },
+    { url: '/images/lilfungi.jpg', alt: 'lilfungi' },
+    { url: '/images/snek.jpg', alt: 'snekk' },
+    { url: '/images/myface.jpg', alt: 'oldme' },
+    { url: '/images/lestart.jpg', alt: 'leme' },
+    { url: '/images/cabin.jpg', alt: 'itali1' },
+    { url: '/images/italihalls.jpg', alt: 'itali2' },
+    { url: '/images/italiold.jpg', alt: 'itali3' },
+    { url: '/images/plaza1.jpg', alt: 'itali4' },
+    { url: '/images/venice.jpg', alt: 'itali5' },
+    { url: '/images/venicebay.jpg', alt: 'itali6' },
+    { url: '/images/venicebayprofile.jpg', alt: 'itali7' },
+    { url: '/images/vroad.jpg', alt: 'itali8' },
     // Add more images as needed
   ];
 

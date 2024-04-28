@@ -1,6 +1,4 @@
-import Image from 'next/image';
 import bw from "../public/images/bigwave.jpg"
-
 import logo from '../public/welcome-banner.webp';
 import reportWebVitals from "../reportWebVitals";
 import ImgCarousel from "../components/ImgCarousel/ImgCarousel"
