@@ -201,7 +201,7 @@ export default function Contact() {
                         Follow my social media accounts to see what I am up to.!
                     </p>
                         <ul>
-                            <li><a href="https://instagram.com/kevoobot">instagram</a></li>
+                            {/* <li><a href="https://instagram.com/kevoobot">instagram</a></li> */}
                             <li><a href="https://github.com/KevFlo">Github</a></li>
                             <li><a href="https://www.linkedin.com/in/flores-kevin/">LinkedIn</a></li>
                             <li><a href="https://tryhackme.com/p/Azath0th">TryHackMe</a></li>
