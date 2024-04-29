@@ -14,6 +14,7 @@ function Nav(){
                 <ul className="flex flex-row  px-30 justify-around whitespace-pre-wrap ...">
                     <li className=" px-30 flex justify-around text-6xl font-bold float-left  mr-2"><Link href="/">Kevin Flores</Link></li>
                     <li className="flex items-center justify-around padding-1 padding-left-60px "><Link href="/About">About</Link></li>
+                    <li className="flex items-center justify-around padding-1 padding-left-60px "><Link href="/Gallery">Gallery</Link></li>
                     <li className="flex items-center justify-around  px-69 "><Link href="/Projects">Projects</Link></li>
                     <li className="flex items-center float-right justify-around"><Link href="/Contact">Contact</Link></li> 
                     <li className="flex items-center justify-around"><Link href="/DevLog">DevLog</Link></li>
