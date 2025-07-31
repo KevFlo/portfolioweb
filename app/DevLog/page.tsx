@@ -40,20 +40,31 @@ const DevLog = () => {
     ));
         
     return (
-      <div className='grid grid-cols-1 justify-between md:grid-cols-2 gap-4'>
-          <div className="max-w-4xl mx-auto px-4 py-8">
-              <Image src={mk} alt="Devme" width={525} height={420} />
+      <div className="max-w-7xl mx-auto px-4 py-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12">
+          <div>
+            <Image 
+              src={mk} 
+              alt="Devme" 
+              width={525} 
+              height={420} 
+              className="w-full h-auto rounded-lg shadow-lg" 
+            />
           </div>
-          <div className="relative top-40 right-20">
-              <ReactMarkdown>{READMECont}</ReactMarkdown>
+          <div>
+            <ReactMarkdown>{READMECont}</ReactMarkdown>
           </div>
-          <div className="max-w-4xl mx-auto px-4 py-8 col-span-2 md:col-span-1 gap-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {postPreviews}
-              </div>
+        </div>
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold mb-6 text-center">Recent Posts</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {postPreviews}
           </div>
+        </div>
+
       </div>
   );
 };
+
 
 export default DevLog;
